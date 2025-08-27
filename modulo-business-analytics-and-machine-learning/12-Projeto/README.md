@@ -6,51 +6,52 @@ Este projeto é uma ferramenta inteligente criada para simplificar a análise de
 A aplicação web analisa em tempo real o ticker de uma ação e, com o uso de Inteligência Artificial, gera um resumo executivo com uma recomendação direta: comprar, vender ou manter. Além disso, ela exibe quatro gráficos interativos que apresentam o histórico de preços, o comportamento do mercado, as principais tendências e o volume de negociação, tudo para auxiliar em uma tomada de decisão mais rápida e bem-informada.
 
 🎯 O Problema Solucionado
+
 No dinâmico mercado financeiro, investidores e analistas enfrentam o desafio de processar um volume massivo de informações dispersas — notícias, relatórios, cotações e análises de mercado. Essa sobrecarga de dados pode levar a decisões tardias ou mal fundamentadas.
 
 Nossa solução ataca diretamente essa dor, centralizando a coleta de dados e aplicando uma camada de IA para "traduzir" a complexidade do mercado em insights acionáveis, economizando tempo e reduzindo o risco de erro humano.
 
 ## Funcionalidades Principais
-✅ Resumo com Inteligência Artificial: Um sistema de agentes de IA lê as notícias mais recentes e as recomendações de analistas para gerar um parecer conciso sobre o ativo.
+- ✅ Resumo com Inteligência Artificial: Um sistema de agentes de IA lê as notícias mais recentes e as recomendações de analistas para gerar um parecer conciso sobre o ativo.
 
-📊 Visualizações de Dados Abrangentes: Quatro gráficos essenciais para uma análise completa nos últimos 6 meses:
+- 📊 Visualizações de Dados Abrangentes: Quatro gráficos essenciais para uma análise completa nos últimos 6 meses:
 
-Gráfico de Preço: A evolução do valor da ação.
+- Gráfico de Preço: A evolução do valor da ação.
 
-Gráfico Candlestick: Uma visão detalhada da variação diária de preços (abertura, fechamento, máxima e mínima).
+- Gráfico Candlestick: Uma visão detalhada da variação diária de preços (abertura, fechamento, máxima e mínima).
 
-Médias Móveis (SMA & EMA): Indicadores cruciais para identificar tendências de curto e longo prazo.
+- Médias Móveis (SMA & EMA): Indicadores cruciais para identificar tendências de curto e longo prazo.
 
-Volume de Negociação: A quantidade de ações negociadas ao longo do tempo, indicando a força de uma tendência.
+- Volume de Negociação: A quantidade de ações negociadas ao longo do tempo, indicando a força de uma tendência.
 
 ## Detalhes Técnicos e Arquitetura
 A aplicação foi construída com uma arquitetura moderna, combinando extração de dados em tempo real, um sistema de IA multiagente e uma interface de usuário interativa.
 
-Arquitetura dos Agentes de IA
+### Arquitetura dos Agentes de IA
 O núcleo da inteligência da aplicação é um sistema composto por três agentes autônomos, orquestrados para fornecer a melhor recomendação possível:
 
-Agente Pesquisador (Web Search Agent): Utiliza o DuckDuckGo para varrer a internet em busca das notícias mais recentes e relevantes sobre o ticker informado, focando em fatos que possam impactar o preço da ação.
+1. Agente Pesquisador (Web Search Agent): Utiliza o DuckDuckGo para varrer a internet em busca das notícias mais recentes e relevantes sobre o ticker informado, focando em fatos que possam impactar o preço da ação.
 
-Agente Analista Financeiro (Financial Analyst Agent): Especializado em extrair e interpretar os dados e as recomendações de analistas publicadas no Yahoo Finance, uma fonte consolidada de informações de mercado.
+2. Agente Analista Financeiro (Financial Analyst Agent): Especializado em extrair e interpretar os dados e as recomendações de analistas publicadas no Yahoo Finance, uma fonte consolidada de informações de mercado.
 
-Agente Orquestrador (Master Agent): Recebe as informações dos outros dois agentes, as consolida, analisa o sentimento geral e a força das evidências, e então elabora o resumo final com a recomendação de "Comprar", "Vender" ou "Manter".
+3. Agente Orquestrador (Master Agent): Recebe as informações dos outros dois agentes, as consolida, analisa o sentimento geral e a força das evidências, e então elabora o resumo final com a recomendação de "Comprar", "Vender" ou "Manter".
 
 Este sistema foi implementado utilizando a biblioteca Phi para a estruturação dos agentes e o poder de processamento de LLMs de alta velocidade da Groq via API.
 
 ## Tecnologias Utilizadas
-Interface e Frontend: Streamlit
+- Interface e Frontend: Streamlit
 
-Extração de Dados Financeiros: yfinance
+- Extração de Dados Financeiros: yfinance
 
-Visualização de Dados: Plotly
+- Visualização de Dados: Plotly
 
-Orquestração de IA: Phi
+- Orquestração de IA: Phi
 
-Motor de IA (LLM): Groq API
+- Motor de IA (LLM): Groq API
 
-Hospedagem e Deploy: AWS (EC2)
+- Hospedagem e Deploy: AWS (EC2)
 
-Gerenciador de Pacotes: uv
+- Gerenciador de Pacotes: uv
 
 ## Como Executar o Projeto
 Siga as instruções abaixo para executar a aplicação em seu ambiente local ou em nuvem.
@@ -115,14 +116,14 @@ Miniconda3-latest-Linux-x86_64.sh
 
     1. Navegue até a pasta do projeto e instale as dependências:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
     2. Execute a aplicação em segundo plano usando nohup:
 
-```bash
-nohup streamlit run dsa_app.py --server.port=8501 --server.address=0.0.0.0 &
-```
+    ```bash
+    nohup streamlit run dsa_app.py --server.port=8501 --server.address=0.0.0.0 &
+    ```
 
     3. Agora você pode acessar a aplicação através do navegador usando: http://[IP-PUBLICO-DA-SUA-INSTANCIA]:8501
