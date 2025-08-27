@@ -5,3 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "modulo-business-analytics-and-machine-learning/12-Projeto",
+]
