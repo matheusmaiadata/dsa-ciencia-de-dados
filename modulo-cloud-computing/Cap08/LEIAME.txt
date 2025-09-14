@@ -1,0 +1,19 @@
+# Projeto 3 - Limpeza e Preparação de Dados Para Modelos de Machine Learning com SageMaker, Docker e Python
+
+# Abra o terminal ou prompt de comando, navegue até a pasta raiz onde estão os arquivos e execute o comando abaixo para criar uma imagem Docker:
+
+docker build -t dsa-image-p3 .
+
+# Execute o comando abaixo para criar o container:
+
+docker run -dit --name dsa-p3 -v ./dsa:/scripts dsa-image-p3
+
+# Dentro do container, execute o comando abaixo para configurar as credenciais e siga as instruções das aulas:
+
+aws configure
+
+# Dentro do container, execute o pipeline:
+
+python dsa_gera_dados.py
+python dsa_configura_ambiente.py
+python dsa_executa_processamento.py
