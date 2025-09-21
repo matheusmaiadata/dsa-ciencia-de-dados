@@ -126,7 +126,7 @@ multi_ai_agent = Agent(team=[dsa_agente_web_search, dsa_agente_financeiro],
 ########## App Web ##########
 
 # Configuração da página do Streamlit
-st.set_page_config(page_title="Data Science Academy", page_icon=":100:", layout="wide")
+st.set_page_config(page_title="Projeto Ciência de Dados", page_icon=":100:", layout="wide")
 
 # Barra Lateral com instruções
 st.sidebar.title("Instruções")
