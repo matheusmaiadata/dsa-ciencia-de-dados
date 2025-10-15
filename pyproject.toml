@@ -12,6 +12,4 @@ dependencies = [
 ]
 
 [tool.uv.workspace]
-members = [
-    "modulo-business-analytics-and-machine-learning/12-Projeto",
-]
+members = []
