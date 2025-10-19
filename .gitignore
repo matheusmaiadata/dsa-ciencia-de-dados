@@ -2,3 +2,5 @@
 modulo-business-analytics-and-machine-learning/83-Cap12/logs*
 *.csv
 *.parquet
+modulo-business-analytics-and-machine-learning/Cap19-Projeto11/dados/*
+modulo-business-analytics-and-machine-learning/Cap19-Projeto11/modelos/*
