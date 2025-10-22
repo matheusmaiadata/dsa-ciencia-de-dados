@@ -1,0 +1,32 @@
+# Projeto 13 - Sistema de Recomendação de Manutenção Preditiva Integrado com IoT Para Redução de Paradas Não Planejadas
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
+
+conda create --name dsabusp13 python=3.12
+
+# Ative o ambiente:
+
+conda activate dsabusp13 (ou: source activate dsabusp13)
+
+# Instale o pip e as dependências:
+
+conda install pip
+pip install -r requirements.txt 
+
+# Execute o jupyter notebook para treinar e salvar o modelo:
+
+jupyter notebook
+
+# Encerre o jupyter notebook após treinar o modelo e execute a app com o deploy do modelo:
+
+streamlit run projeto13app.py
+
+# Acesse o jupyter pelo seu navegador padrão.
+
+# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+
+conda deactivate
+conda remove --name dsabusp13 --all
+
+
+
