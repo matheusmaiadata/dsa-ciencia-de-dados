@@ -3,14 +3,11 @@ name = "ds-ciencia-de-dados"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = [
-    "matplotlib>=3.10.7",
-    "scikit-learn>=1.7.2",
-    "scipy>=1.16.2",
-    "seaborn>=0.13.2",
 ]
 
 [tool.uv.workspace]
 members = [
+    "modulo-series-temporais-e-real-time-analytics/project1",
 ]
