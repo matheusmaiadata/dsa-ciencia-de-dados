@@ -1,0 +1,25 @@
+# Modelagem de Séries Temporais e Real-Time Analytics com Apache Spark e Databricks
+# Instalação e Configuração do Cluster Spark
+
+# Abra o terminal ou prompt de comando e acesse a pasta onde estão os arquivos no seu computador
+
+# Execute o comando abaixo para criar e inicializar o Cluster
+docker compose -f docker-compose.yml up -d --scale spark-worker-dsa=2
+
+# Spark Master
+http://localhost:9090
+
+# History Server
+http://localhost:18080
+
+# Para desligar o Cluster
+docker compose -f docker-compose.yml down
+
+# Para executar o treinamento do modelo do projeto 2
+docker exec spark-master-dsa spark-submit --deploy-mode client ./jobs/projeto2-treino.py
+
+# Para executar o deploy do modelo
+docker exec spark-master-dsa spark-submit --deploy-mode client ./jobs/projeto2-deploy.py
+
+# Para obter o gráfico com as previsões
+python dataviz/projeto2-dataviz.py
