@@ -1,6 +1,8 @@
 *.env
 modulo-business-analytics-and-machine-learning/83-Cap12/logs*
 *.csv
+*.crc
+_SUCCESS
 *.parquet
 modulo-business-analytics-and-machine-learning/Cap19-Projeto11/dados/*
 modulo-business-analytics-and-machine-learning/Cap19-Projeto11/modelos/*
