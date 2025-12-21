@@ -1,0 +1,28 @@
+# Lab 6 - Usando Cálculo e Limite de Funções em Data Science com Linguagem Python
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
+
+conda create --name dsamatlab6 python=3.13
+
+# Ative o ambiente:
+
+conda activate dsamatlab6 (ou: source activate dsamatlab6)
+
+# Instale o pip e as dependências:
+
+conda install pip
+pip install -r requirements.txt 
+
+# Execute o jupyter notebook
+
+jupyter notebook
+
+# Acesse o jupyter pelo seu navegador padrão.
+
+# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+
+conda deactivate
+conda remove --name dsamatlab6 --all
+
+
+
