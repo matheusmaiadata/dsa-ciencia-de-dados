@@ -1,0 +1,30 @@
+# Projeto 4 - Matemática da Arquitetura Transformer e Deploy do Modelo de Forecast de Séries Temporais
+
+############### ATENÇÃO! O PROCEDIMENTO ABAIXO É PARA USO LOCAL! ###############
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
+
+conda create --name dsamatp4 python=3.13
+
+# Ative o ambiente:
+
+conda activate dsamatp4 (ou: source activate dsamatp4)
+
+# Instale o pip e as dependências:
+
+conda install pip
+pip install -r requirements.txt 
+
+# Execute o jupyter notebook
+
+jupyter notebook
+
+# Acesse o jupyter pelo seu navegador padrão.
+
+# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+
+conda deactivate
+conda remove --name dsamatp4 --all
+
+
+
