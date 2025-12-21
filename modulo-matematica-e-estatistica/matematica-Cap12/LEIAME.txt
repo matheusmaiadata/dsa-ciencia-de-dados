@@ -1,0 +1,28 @@
+# Projeto 3 - Aplicação Prática de Autovetores e Autovalores com PCA (Análise de Componentes Principais)
+
+# Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
+
+conda create --name dsamatp3 python=3.13
+
+# Ative o ambiente:
+
+conda activate dsamatp3 (ou: source activate dsamatp3)
+
+# Instale o pip e as dependências:
+
+conda install pip
+pip install -r requirements.txt 
+
+# Execute o jupyter notebook
+
+jupyter notebook
+
+# Acesse o jupyter pelo seu navegador padrão.
+
+# Use os comandos abaixo para desativar o ambiente virtual e remover o ambiente (opcional):
+
+conda deactivate
+conda remove --name dsamatp3 --all
+
+
+
